@@ -1,0 +1,27 @@
+.fancy{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .fancy th{
+    background-color: #e7e4e4;
+    padding: 10px;
+  }
+  
+  .fancy td{
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .fancy .tr:nth-child(even){
+    background-color: #f9f9f9;
+    transition: box-shadow .3;
+  }
+  
+  .fancy .tr:hover{
+    background-color: #e5e5e5;
+    box-shadow: 0 0 8px rgba(33, 33, 33, 0.2);
+    width: 45px;
+    height: 45px;
+  }
+  

@@ -1,0 +1,16 @@
+<table class="fancy">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Data di nascita</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let autore of autori" class="tr">
+            <td>{{autore.nome}}</td>
+            <td>{{autore.cognome}}</td>
+            <td>{{autore.dataNascita}}</td>
+        </tr>
+    </tbody>
+</table>
