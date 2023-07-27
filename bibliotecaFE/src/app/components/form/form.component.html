@@ -1,0 +1,38 @@
+<!-- <p>form works!</p> -->
+
+<form [formGroup]="libroForm" (ngSubmit)="postLibri(libroForm.value)">
+
+  <section>
+    <h4>Aggiungi un libro</h4>
+    <div class="campi">
+        <div class="col-2">
+            <mat-form-field>
+                <mat-label>Titolo</mat-label>
+                <input type="text" formControlName="titolo" matInput placeholder="Es: Divina Commedia">
+                <button matSuffix mat-icon-button aria-label="Clear" ></button>
+            </mat-form-field><br>
+            <mat-form-field>
+                <mat-label>Categoria</mat-label>
+                <input type="text" formControlName="categoria" matInput placeholder="Es: Romanzo">
+                <button matSuffix mat-icon-button aria-label="Clear" ></button>
+            </mat-form-field>
+        </div>
+        <div class="col-2">
+            <mat-form-field>
+                <mat-label>Data di Pubblicazione</mat-label>
+                <input type="text" formControlName="dataPubblicazione" matInput placeholder="Es: 15/03/1400">
+                <button matSuffix mat-icon-button aria-label="Clear"></button>
+            </mat-form-field><br>
+            <!--<mat-form-field>
+                <mat-label>Autore</mat-label>
+                <input type="text" name="listaAutori" matInput [(ngModel)]="b" placeholder="Es: John Doe">
+                <button *ngIf="b" matSuffix mat-icon-button aria-label="Clear" (click)="b=''"></button>
+            </mat-form-field>-->
+        </div>
+    </div>
+</section>
+
+  <section class="button">
+    <button mat-raised-button color="primary" type="submit" color>Invia il form</button>
+  </section>
+</form>

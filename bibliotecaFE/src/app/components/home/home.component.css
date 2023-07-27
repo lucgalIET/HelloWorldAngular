@@ -1,0 +1,20 @@
+.homeContainer{
+    /*background-color: rgb(0, 255, 255, 0.7);*/
+    height: 100vw;
+    padding-top: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.homeText{
+    width: 500px;
+    position: relative;
+    left: 32%;
+    text-align: center;
+}
+
+.homeImg{
+    position: relative;
+    left: 41%;
+    margin-bottom: 15px;
+}

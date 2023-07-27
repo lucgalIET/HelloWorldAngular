@@ -1,0 +1,24 @@
+<!-- <p>libro works!</p> -->
+
+<table class="fancy">
+    <thead>
+        <tr>
+            <th>Titolo</th>
+            <th>Categoria</th>
+            <th>Data di Pubblicazione</th>
+            <th>Autori</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let libro of libri" class="tr">
+            <td>{{libro.titolo}}</td>
+            <td>{{libro.categoria}}</td>
+            <td>{{libro.dataPubblicazione}}</td>
+            <td>
+                <div *ngFor="let autori of libro.listaAutori">
+                {{autori.nome}}
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
